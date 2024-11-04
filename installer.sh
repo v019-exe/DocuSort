@@ -65,7 +65,7 @@ else
 fi
 
 echo -e "[VOID INSTALLER][$(date +"%H:%M:%S")]: Descargando el script docusort"
-curl -s -o docusort.py ""
+curl -s -o docusort.py "https://raw.githubusercontent.com/v019-exe/DocuSort/refs/heads/main/docusort.py"
 
 if [ $? -ne 0 ]; then
     echo -e "[VOID INSTALLER][$(date +"%H:%M:%S")]: Error al descargar el script"
