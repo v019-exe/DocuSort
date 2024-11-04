@@ -81,7 +81,7 @@ mv docusort.py /usr/local/bin/docusort.py
 
 
 echo -e "[VOID INSTALLER][$(date +"%H:%M:%S")]: Creando wrapper..."
-cat << EOF | sudo tee /usr/local/bin/docusort-wrapper > dev/null
+cat << EOF | sudo tee /usr/local/bin/docusort-wrapper > /dev/null
 #!/bin/bash
 python3 /usr/local/bin/docusort.py "\$@"
 EOF
